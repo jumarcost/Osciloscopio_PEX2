@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Apr  5 23:46:26 2022
+# Process ID: 17864
+# Current directory: C:/Users/juanm/Documents/DOCS/Knowledge/UC3M/Proyectos/PEX2/osciloscopio_v2/osciloscopio_v2.runs/synth_1
+# Command line: vivado.exe -log sistema.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sistema.tcl
+# Log file: C:/Users/juanm/Documents/DOCS/Knowledge/UC3M/Proyectos/PEX2/osciloscopio_v2/osciloscopio_v2.runs/synth_1/sistema.vds
+# Journal file: C:/Users/juanm/Documents/DOCS/Knowledge/UC3M/Proyectos/PEX2/osciloscopio_v2/osciloscopio_v2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JYOUSHIKI, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 10, Host memory: 34220 MB
+#-----------------------------------------------------------
+source sistema.tcl -notrace
