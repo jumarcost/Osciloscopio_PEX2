@@ -1,0 +1,85 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Apr 20 20:13:38 2022
+| Host         : F32-P09 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     7 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |               4 |            3 |
+| No           | Yes                   | No                     |              20 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              30 |           11 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                             |                  |                2 |              4 |
+|  clk_IBUF_BUFG | uart_instance/bit_duration_count[3]_i_1_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG | uart_instance/rx_data_out[7]_i_1_n_0        | reset_IBUF       |                2 |              8 |
+|  clk_IBUF_BUFG | uart_instance/E[0]                          | reset_IBUF       |                3 |             10 |
+|  clk_IBUF_BUFG | driver/CuentaV[9]_i_1_n_0                   | reset_IBUF       |                5 |             10 |
+|  clk_IBUF_BUFG | driver/Enable                               | reset_IBUF       |                3 |             10 |
+|  clk_IBUF_BUFG |                                             | reset_IBUF       |                9 |             24 |
++----------------+---------------------------------------------+------------------+------------------+----------------+
+
+
