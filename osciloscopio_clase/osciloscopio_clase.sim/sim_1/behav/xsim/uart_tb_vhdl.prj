@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../uart_testing.srcs/sources_1/imports/trunk/uart.vhd" \
-"../../../../uart_testing.srcs/sim_1/imports/trunk/uart_tb.vhd" \
-
-# Do not sort compile order
-nosort
