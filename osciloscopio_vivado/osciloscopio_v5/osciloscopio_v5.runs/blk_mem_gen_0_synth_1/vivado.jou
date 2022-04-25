@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 20 19:11:24 2022
+# Process ID: 4808
+# Current directory: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/blk_mem_gen_0_synth_1
+# Command line: vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/blk_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace
