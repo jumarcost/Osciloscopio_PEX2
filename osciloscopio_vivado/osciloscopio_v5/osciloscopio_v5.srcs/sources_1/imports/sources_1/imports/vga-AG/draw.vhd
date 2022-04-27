@@ -30,6 +30,7 @@ a <= std_logic_vector(x);
     
    if ((Y>112)and(Y<368)) then
          
+        --if ((((480-Y)-112)=(unsigned(valor))) and not (unsigned(valor) = 255)) then 
         if (((480-Y)-112)=(unsigned(valor))) then 
             RGB<=(others=>'0');
         else
@@ -39,6 +40,9 @@ a <= std_logic_vector(x);
     else
         RGB<= "000011111111";
     end if;
+    
+    
+    
      end process;
 
 end Behavioral;

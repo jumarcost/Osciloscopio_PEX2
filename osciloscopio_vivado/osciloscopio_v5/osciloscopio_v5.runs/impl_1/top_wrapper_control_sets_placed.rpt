@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Apr 20 20:13:38 2022
-| Host         : F32-P09 running 64-bit Service Pack 1  (build 7601)
+| Date         : Wed Apr 27 19:03:37 2022
+| Host         : LAPTOP-JUAN running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
 | Design       : top_wrapper
 | Device       : xc7a35t
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
-| No           | No                    | Yes                    |               4 |            3 |
-| No           | Yes                   | No                     |              20 |            6 |
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |              20 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |              30 |           11 |
 | Yes          | Yes                   | No                     |              12 |            3 |
@@ -73,12 +73,12 @@ Table of Contents
 +----------------+---------------------------------------------+------------------+------------------+----------------+
 |  Clock Signal  |                Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                                             |                  |                2 |              4 |
-|  clk_IBUF_BUFG | uart_instance/bit_duration_count[3]_i_1_n_0 | reset_IBUF       |                1 |              4 |
-|  clk_IBUF_BUFG | uart_instance/rx_data_out[7]_i_1_n_0        | reset_IBUF       |                2 |              8 |
-|  clk_IBUF_BUFG | uart_instance/E[0]                          | reset_IBUF       |                3 |             10 |
-|  clk_IBUF_BUFG | driver/CuentaV[9]_i_1_n_0                   | reset_IBUF       |                5 |             10 |
-|  clk_IBUF_BUFG | driver/Enable                               | reset_IBUF       |                3 |             10 |
+|  clk_IBUF_BUFG |                                             |                  |                3 |              4 |
+|  clk_IBUF_BUFG | uart_instance/bit_duration_count[3]_i_1_n_0 | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG | uart_instance/rx_data_out[7]_i_1_n_0        | reset_IBUF       |                1 |              8 |
+|  clk_IBUF_BUFG | counter_instance/cuenta_sig[9]_i_1_n_0      | reset_IBUF       |                5 |             10 |
+|  clk_IBUF_BUFG | driver/Enable                               | reset_IBUF       |                2 |             10 |
+|  clk_IBUF_BUFG | driver/CuentaV[9]_i_1_n_0                   | reset_IBUF       |                4 |             10 |
 |  clk_IBUF_BUFG |                                             | reset_IBUF       |                9 |             24 |
 +----------------+---------------------------------------------+------------------+------------------+----------------+
 

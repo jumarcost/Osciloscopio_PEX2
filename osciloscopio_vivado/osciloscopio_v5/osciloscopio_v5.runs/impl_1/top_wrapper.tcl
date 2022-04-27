@@ -60,27 +60,25 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/.Xil/Vivado-5376-F32-P09/incrSyn
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.xpr [current_project]
-  set_property ip_output_repo C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.cache/wt [current_project]
+  set_property parent.project_path D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.xpr [current_project]
+  set_property ip_output_repo D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/synth_1/top_wrapper.dcp
-  read_ip -quiet C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_xdc {{C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc}}
+  add_files -quiet D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.runs/synth_1/top_wrapper.dcp
+  read_ip -quiet D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_xdc {{D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc}}
   link_design -top top_wrapper -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

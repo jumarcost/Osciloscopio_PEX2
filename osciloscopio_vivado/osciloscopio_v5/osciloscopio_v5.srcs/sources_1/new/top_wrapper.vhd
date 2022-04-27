@@ -126,7 +126,7 @@ architecture Behavioral of top_wrapper is
     
     signal pintar_on : std_logic;
     
-    type estado is (idle, uart_ram, wait_next, ver_ram);
+    type estado is (idle, start, uart_ram, wait_next, ver_ram);
     signal estado_actual,estado_nuevo : estado;
     
 
@@ -210,11 +210,25 @@ begin
             enable_counter <= '0';
             pintar_on <= '0';
             
+            if rx_ready_sig = '1' and (unsigned(rx_data) = 255)then  --se han recibido dato
+                estado_nuevo <= start;
+                clear_counter <= '1';
+            else
+                estado_nuevo <= idle;
+            end if;
+            
+        when start =>
+            wea <= "0";
+            addra <= (others=>'0');
+            leds <= (others=>'0');
+            enable_counter <= '0';
+            pintar_on <= '0';
+            
             if rx_ready_sig = '1' then  --se han recibido dato
                 estado_nuevo <= uart_ram;
                 clear_counter <= '1';
             else
-                estado_nuevo <= idle;
+                estado_nuevo <= start;
             end if;
             
         when uart_ram =>

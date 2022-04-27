@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc} rfile:{../../../osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc} rfile:{../../../osciloscopio_v5.srcs/constrs_1/imports/Proyectos II/constra.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

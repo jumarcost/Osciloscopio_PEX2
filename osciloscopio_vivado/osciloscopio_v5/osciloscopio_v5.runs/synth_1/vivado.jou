@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Apr 20 20:10:14 2022
-# Process ID: 6764
-# Current directory: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/synth_1
+# Start of session at: Wed Apr 27 19:01:45 2022
+# Process ID: 12752
+# Current directory: D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.runs/synth_1
 # Command line: vivado.exe -log top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
-# Log file: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/synth_1/top_wrapper.vds
-# Journal file: C:/Users/Alumno/Downloads/osciloscopio_v5-20220420T155642Z-001/osciloscopio_v5/osciloscopio_v5.runs/synth_1\vivado.jou
+# Log file: D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.runs/synth_1/top_wrapper.vds
+# Journal file: D:/Documents/Knowledge/UC3M/Proyectos/PEX2/REPO/Osciloscopio_PEX2/osciloscopio_vivado/osciloscopio_v5/osciloscopio_v5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_wrapper.tcl -notrace
